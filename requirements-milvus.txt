@@ -1,0 +1,3 @@
+-r requirements.txt
+pymilvus>=3,<4
+milvus-lite>=3.2,<4

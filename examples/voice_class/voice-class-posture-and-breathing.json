@@ -1,0 +1,58 @@
+{
+  "id": "voice-class-posture-and-breathing",
+  "title": "Voice Class",
+  "edition": "Rollo Fisher / LibreTexts / CC BY 4.0（节选）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Performance/Voice_Class_(Fisher)/01:_Unit_1/1.02:_Basics_of_Singing_1-_Posture_and_Breathing",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "voice-class-posture-and-breathing-awareness",
+      "section": "1.2 歌唱姿势与呼吸 · 身体习惯",
+      "text": "Two basic elements of good singing are posture and breathing. Both of these are habits instilled since birth. However, the majority of people have both good and bad habits when coupled with the act of singing. For example, think about how you sit. Do you regularly sit in a chair, on the floor, or in some other way? Do you sit with your legs crossed, up, or down? When you sit, is your back straight, or are you hunched over in some way? Another example with breathing: do you ever think about how you breathe? Do you breathe deeply? Is it hard to breathe for any reason? These are some of the basic questions when becoming aware of your physical habits for the purposes of singing.",
+      "page": 1,
+      "page_label": null,
+      "entities": [
+        "歌唱姿势",
+        "歌唱呼吸"
+      ]
+    },
+    {
+      "id": "voice-class-posture-and-breathing-alignment",
+      "section": "1.2 歌唱姿势与呼吸 · 站姿",
+      "text": "Posture in essence is how we hold ourselves up, typically in a standing or sitting position. Your body utilizes different muscle groups when sitting verses standing. If you are in the best possible posture, you are using the least amount of muscle groups (free of unneeded tension). One common problem with singers is unneeded tension, especially in the neck area. This is caused by a number of factors, but the first one to check is posture. When standing to sing, place both feet about shoulder width apart (one can be slightly in front of the other for balance if necessary). Now the upper body should feel relaxed but aligned. One technique is to imagine there is a string coming out of the top of the back of your head, and someone is pulling just enough to keep you straight. Another technique is to put your arms above your head as if to stretch, then bring them down but leave your body in the same place as the stretch position.",
+      "page": 1,
+      "page_label": null,
+      "entities": [
+        "歌唱姿势",
+        "站姿",
+        "颈部紧张"
+      ]
+    },
+    {
+      "id": "voice-class-posture-and-breathing-self-check",
+      "section": "1.2 歌唱姿势与呼吸 · 姿势自查",
+      "text": "There are a few ways you can check to see if you are in correct singing posture. First, you can use a mirror, preferably a full-length mirror, and look in the mirror to see if anything is out of place. Second, you can video record yourself, and then look at the recording. Third, have someone you trust look at your posture. And finally, you can just see if you are balanced by placing a hardback book on your head, and not let it fall. One can also check proper alignment by lying with your back on the ground. This limits the number of muscles needed to stay balanced.",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "歌唱姿势",
+        "镜子观察",
+        "录像自查"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "歌唱姿势",
+      "relation": "自查方法",
+      "tail": "镜子观察",
+      "evidence_id": "voice-class-posture-and-breathing-self-check"
+    },
+    {
+      "head": "歌唱姿势",
+      "relation": "自查方法",
+      "tail": "录像自查",
+      "evidence_id": "voice-class-posture-and-breathing-self-check"
+    }
+  ]
+}

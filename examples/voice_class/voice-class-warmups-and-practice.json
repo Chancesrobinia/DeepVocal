@@ -1,0 +1,87 @@
+{
+  "id": "voice-class-warmups-and-practice",
+  "title": "Voice Class",
+  "edition": "Rollo Fisher / LibreTexts / CC BY 4.0（节选）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Performance/Voice_Class_(Fisher)/01:_Unit_1/1.03:_Basics_of_Singing_2-_Warmups_and_Practice_Technique",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "voice-class-warmups-and-practice-song-fit",
+      "section": "1.3 热身与练习 · 按曲目选择热身",
+      "text": "Warming up the voice before singing a song is similar to warming up before an athletic workout. Sure, you can work out without warming up, but the effectiveness of the workout is diminished, and there is a better chance of straining a muscle. Since singing is a physical exercise, it should be approached no differently. There are different schools of thought when approaching the length of time a singer should warm up. No less than 5 minutes is advised, but too much more may not be productive. The warm up should also fit what the singer plans on practicing. If the song has a difficult run, then singing a warm up similar to the run will ready the voice for that passage. Remember, the goal is to eliminate any extra tension in the voice, and this gives the singer muscle memory of what is to be practiced.",
+      "page": 1,
+      "page_label": null,
+      "entities": [
+        "热身",
+        "练习目标"
+      ]
+    },
+    {
+      "id": "voice-class-warmups-and-practice-sequence",
+      "section": "1.3 热身与练习 · 热身组成",
+      "text": "There are several components to a healthy warm up: 1. Physical stretching; 2. Breathing exercise; 3. Single note sustained on a vowel; 4. Simple narrow range exercise; 5. Articulator exercise; 6. Range extension; and 7. Longer, wider, faster.",
+      "page": 1,
+      "page_label": null,
+      "entities": [
+        "热身",
+        "呼吸练习",
+        "单音延长",
+        "窄音域练习"
+      ]
+    },
+    {
+      "id": "voice-class-warmups-and-practice-single-note",
+      "section": "1.3 热身与练习 · 单音延长",
+      "text": "Next, sing a single note in the middle of your range (a G is good if you are familiar with music notation) on a vowel. The “oo” vowel is a good one to start with as it is easier to keep round, tall, and free of tension. Try and hold the note also for counts in multiples of 4, changing the note higher or lower for a few steps as you increase the time.",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "热身",
+        "单音延长"
+      ]
+    },
+    {
+      "id": "voice-class-warmups-and-practice-five-note",
+      "section": "1.3 热身与练习 · 五音下行",
+      "text": "A small range of notes is a common type of warm up. There are many types out there to try, so I will give a couple here. Usually, it is a five note scale going down (5,4,3,2,1 or G,F,E,D,C or sol fa mi re do, depending on your thought process). The exercise should be done with one consonant and one vowel, for example Na Na Na Na Na). You then move up a step and continue the same exercise, starting from the middle of your range up to a medium high part of your range. Then do a different vowel and constant starting from the middle of your range going down to a medium low part of your range. What vowel and consonant to pick varies on what you are working on in your song practice that day.",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "热身",
+        "窄音域练习",
+        "五音下行"
+      ]
+    },
+    {
+      "id": "voice-class-warmups-and-practice-articulation",
+      "section": "1.3 热身与练习 · 咬字练习",
+      "text": "The next exercise works your articulators: your tongue, teeth, and lips. One of the great advantages singers have over instrumental musicians is the ability to communicate through words. Unfortunately, this can backfire if the audience cannot understand the words. Being aware of how to use your articulators differently in singing versus talking is imperative if the singer wants to be an effective communicator. One example of an exercise is a five-note scale going up and down using “ming” (holding the ng at the end of each one). Other examples are “flah,” “zing,” “blah,” “ping,” and “bah lah.” Again, which ones to use should be reflected by the music that will follow the warm up.",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "热身",
+        "咬字练习"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "热身",
+      "relation": "可包含",
+      "tail": "单音延长",
+      "evidence_id": "voice-class-warmups-and-practice-sequence"
+    },
+    {
+      "head": "热身",
+      "relation": "可包含",
+      "tail": "窄音域练习",
+      "evidence_id": "voice-class-warmups-and-practice-sequence"
+    },
+    {
+      "head": "窄音域练习",
+      "relation": "练习示例",
+      "tail": "五音下行",
+      "evidence_id": "voice-class-warmups-and-practice-five-note"
+    }
+  ]
+}

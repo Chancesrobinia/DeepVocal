@@ -1,0 +1,3 @@
+-r requirements-milvus.txt
+-r requirements-pdf.txt
+fastembed>=0.9,<1

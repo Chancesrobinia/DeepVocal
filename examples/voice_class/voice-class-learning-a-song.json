@@ -1,0 +1,101 @@
+{
+  "id": "voice-class-learning-a-song",
+  "title": "Voice Class",
+  "edition": "Rollo Fisher / LibreTexts / CC BY 4.0（节选）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Performance/Voice_Class_(Fisher)/01:_Unit_1/1.04:_Basics_of_Singing_3-_How_to_Learn_a_Song",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "voice-class-learning-a-song-echo",
+      "section": "1.4 学唱新歌 · 逐句跟唱",
+      "text": "Learning by rote simply means someone sings a line of the song and you sing it back. Cultures have taught music in this way for millennia, and some religious groups still use this method today in services where a leader sings a line, and the congregation responds. If learning a song by rote, typically a person sings a line (or phrase), then sings a second phrase, puts them together, sings a third, adds that, and so on. Many people who teach groups to sing use this method.",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "学唱新歌",
+        "逐句跟唱",
+        "短句分组"
+      ]
+    },
+    {
+      "id": "voice-class-learning-a-song-speak",
+      "section": "1.4 学唱新歌 · 朗读歌词",
+      "text": "Speaking the text of the song out loud is a technique for understanding the meaning of the lyrics, as well as a way to decide what is the most important word of each phrase (more on that later). The act of speaking it audibly is important for this technique to have its full effect. Try looking up the lyrics to a song you know already somewhat well. Speak the text, and then listen to the song. You may notice the meanings of parts of the song seem different. You are now linking meaning to words that were not important before you underwent this exercise. This can also help with memorization of songs.",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "学唱新歌",
+        "朗读歌词",
+        "乐句"
+      ]
+    },
+    {
+      "id": "voice-class-learning-a-song-sheet-music",
+      "section": "1.4 学唱新歌 · 看谱学唱",
+      "text": "Using sheet music to learn a song is standard practice in most formal voice lessons. Music reading literacy is like reading literacy; it opens up new ways to learn material, sometimes more quickly. If you have never read music before, it can be daunting to look at a piece of music. There are many instructional methods out there to learn how to read music. Just learning the note names and how long you hold a note (rhythm) is just the beginning (like learning the alphabet). A",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "学唱新歌",
+        "看谱学唱",
+        "节奏"
+      ]
+    },
+    {
+      "id": "voice-class-learning-a-song-accompaniment",
+      "section": "1.4 学唱新歌 · 伴奏与音高参照",
+      "text": "Singing along with a karaoke track is a method to utilize after you feel comfortable singing the song with the vocals behind you. Some singers feel very confident singing with the vocal track behind them, and then when it is removed, suddenly their voice goes away. This is due to a subconscious method for singing where the singer is hearing the voice and then following it a split second later. I call it “cheat-singing.” You are only cheating yourself when using this, because as soon as the other vocal is not there, you are stuck. Singing with a karaoke track, or a live accompaniment if available, eliminates cheat singing as an option (unless the accompanist is playing your notes and you are cheat-singing to that). The track also assists the singer in reminding them of the right pitch centers, something not available if the singer sings without any accompaniment, or a cappella.",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "学唱新歌",
+        "伴奏",
+        "音高参照"
+      ]
+    },
+    {
+      "id": "voice-class-learning-a-song-recording",
+      "section": "1.4 学唱新歌 · 清唱与录音复听",
+      "text": "There is an advantage to singing a cappella. Without anything to use as a crutch, the singer is forced to sing solo. This exposes any vocal issues that were hiding behind either the accompaniment or the other vocalist. It can be hard to diagnose all issues listening and singing at the same time. That’s where recording yourself is useful. Very few people actually enjoy listening to themselves sing. One of the reasons is because when you sing, you hear yourself both through your ears and in your head. In a recording, the singer hears how he or she sounds to everyone else. This can be discouraging, but useful as a tool to improve. Video recording is a better method than just audio, because any physical issues that occur can be diagnosed as well (ex. You see your head leaning forward when trying to sing a high note).",
+      "page": 2,
+      "page_label": null,
+      "entities": [
+        "学唱新歌",
+        "清唱",
+        "录音复听"
+      ]
+    },
+    {
+      "id": "voice-class-learning-a-song-solfege",
+      "section": "1.4 学唱新歌 · 唱名与视唱",
+      "text": "Solfedge is a system to learn music developed by a Hungarian named Zoltan Kodály. He created a system of syllables for notes in the scale (Do-re-mi-fa-sol-la-ti-do), which in turn help the singer know what direction the note tends to move. It helped save Hungarian folk music, which was in danger of disappearing altogether. Once a singer learns the system, singing a phrase for the first time becomes easier (cue Sound of Music). This is an excellent method for sight reading music. Excellent sight readers can look at a piece of music, and sing it correctly the first time without hearing it. Professional sight readers are employed all around the world, in church choirs, radio choirs in Europe, and media companies.",
+      "page": 3,
+      "page_label": null,
+      "entities": [
+        "学唱新歌",
+        "唱名",
+        "视唱"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "学唱新歌",
+      "relation": "练习方法",
+      "tail": "逐句跟唱",
+      "evidence_id": "voice-class-learning-a-song-echo"
+    },
+    {
+      "head": "学唱新歌",
+      "relation": "练习方法",
+      "tail": "朗读歌词",
+      "evidence_id": "voice-class-learning-a-song-speak"
+    },
+    {
+      "head": "伴奏",
+      "relation": "提供",
+      "tail": "音高参照",
+      "evidence_id": "voice-class-learning-a-song-accompaniment"
+    }
+  ]
+}
