@@ -4,3 +4,4 @@ langgraph>=1,<2
 httpx>=0.28,<1
 python-multipart>=0.0.22,<1
 numpy>=1.26,<3
+av>=18.1.1,<20

@@ -1,0 +1,15 @@
+{"id":"S1","group":"supported","question":"3/4 和 6/8 一小节都有六个八分音符，实际唱时各分成几个大拍、每拍几个八分音符？","expected":"3/4 是三个大拍，每大拍两个八分音符。6/8 通常是两个大拍，每大拍三个八分音符。","evidence_ids":["theory-compound-meter-compare"]}
+{"id":"S2","group":"supported","question":"C 大调歌曲对我太高。我把整个旋律降两个半音后是什么调？还想用原来的伴奏，要怎么处理伴奏？","expected":"成为降 B 大调，伴奏也整体降两个半音。","evidence_ids":["theory-transpose-down-two"]}
+{"id":"S3","group":"supported","question":"一唱到换声区我就想用更大的音量顶过去。在舒适音域做什么小练习比较合适？","expected":"舒适音域内做小范围轻声滑音，不为到达高音而增加音量。","evidence_ids":["register"]}
+{"id":"S4","group":"supported","question":"DeepVocal 收录的 Rollo Fisher《Voice Class》1.3 里，在音域中段用 oo 保持单音的练习是怎样递增计数的？","expected":"保持时长以四拍的倍数增加，随着时长增加可把音略唱高或唱低。","evidence_ids":["voice-class-warmups-and-practice-single-note"]}
+{"id":"S5","group":"supported","question":"同音高的二分音符和四分音符用延音线连起来，按四分音符一拍，到后一个音符时要再起音吗，总共要唱几拍？","expected":"总共保持三拍，后一个音符无需重新起音。","evidence_ids":["theory-duration-tie"]}
+{"id":"U1","group":"unsupported","question":"假声到底怎么唱？我想知道怎么找到假声的感觉，给一个入门练习。","expected":"当前库没有专门说明假声识别或入门步骤的资料。一般练声建议可单独标明为泛化建议，不能当成有来源的假声教程。","evidence_ids":[]}
+{"id":"U2","group":"unsupported","question":"DeepVocal 收录的《Voice Class》1.3 有没有规定唇颤音必须连续做 5 分钟？如果有，组间休息多少秒？请按收录原文回答。","expected":"教材收录片段给的是整体热身时长建议，未规定唇颤音连续 5 分钟或组间休息秒数。","evidence_ids":[]}
+{"id":"U3","group":"unsupported","question":"DeepVocal 收录的《Voice Class》1.2 站姿自查里，有没有规定耳朵和肩膀要相距多少厘米？请给具体数值和出处。","expected":"站姿自查有镜子、录像等方式，收录段落没有规定耳朵与肩膀的距离。","evidence_ids":[]}
+{"id":"U4","group":"unsupported","question":"项目收录的《Open Music Theory》节选里，能找到 7/8 按 2+2+3 和 3+2+2 分组的对照表吗？请给表号和页码。","expected":"库内选段没有这张表，不能编造表号或页码。","evidence_ids":[]}
+{"id":"U5","group":"unsupported","question":"当前收录的《Voice Class》节选有没有给唱高音时第一共振峰 F1 的固定赫兹数？请给数值和原文位置。","expected":"库内节选没有该固定数值或原文位置，不能编造。","evidence_ids":[]}
+{"id":"F1","group":"false_premise","question":"G 大调第七级应该是 F 自然音吧？它到上面的 G 是半音，对吗？","expected":"G 大调第七级是 F♯，F♯ 到 G 是半音，F 自然音到 G 是全音。","evidence_ids":["theory-major-tonic"]}
+{"id":"F2","group":"false_premise","question":"如果节拍器标的是四分音符等于 120 BPM，我每一拍应该保持 2 秒，对吧？","expected":"120 BPM 是每秒两拍，一拍 0.5 秒。","evidence_ids":["theory-tempo-bpm"]}
+{"id":"F3","group":"false_premise","question":"谱上连续两个四分休止符，我能把这两拍从心里跳过，马上唱下一句吗？","expected":"不能。继续按拍计数，等两个四分休止符的时值走完再进入。","evidence_ids":["theory-duration-rests"]}
+{"id":"F4","group":"false_premise","question":"歌曲开头的弱起音是在第一个强拍之后唱，所以弱起小节必须是个完整小节，对吗？","expected":"弱起音在第一个强拍之前，弱起小节比完整小节短。","evidence_ids":["theory-pickup-beginning"]}
+{"id":"F5","group":"false_premise","question":"Rollo Fisher《Voice Class》1.3 的 ming 五音咬字练习在每个音结尾要延长 m，对吗？","expected":"要保留 ng 音，资料明确说 holding the ng at the end of each one。","evidence_ids":["voice-class-warmups-and-practice-articulation"]}

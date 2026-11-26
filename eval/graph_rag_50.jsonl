@@ -1,0 +1,50 @@
+{"id":"GR-001","group":"direct","question":"测评报告里音分是正数，表示我比参考音高还是低？","relevant_chunk_ids":["pitch"],"reference_answer":"正音分表示相对于目标音高偏高。"}
+{"id":"GR-002","group":"direct","question":"录音测评中，起音时间偏差是拿实际起音跟什么时间比较？","relevant_chunk_ids":["rhythm"],"reference_answer":"比较实际起音与参考音符的开始时间。"}
+{"id":"GR-003","group":"direct","question":"想看长音稳不稳，应该观察音高曲线的哪一段？颤音就算不稳吗？","relevant_chunk_ids":["sustain"],"reference_answer":"观察去掉起音和收音后的持续段，颤音本身不等于不稳。"}
+{"id":"GR-004","group":"direct","question":"唇颤音做起来很费力，教材示例里用什么低强度热身替代？","relevant_chunk_ids":["lip"],"reference_answer":"可以改做轻声哼鸣。"}
+{"id":"GR-005","group":"direct","question":"伴奏串进清唱录音、有背景噪声或削波，会影响测评吗？","relevant_chunk_ids":["record"],"reference_answer":"三种录音情况都可能影响分析。"}
+{"id":"GR-006","group":"direct","question":"站着唱时，双脚大概分开多宽，上身应该怎样保持？","relevant_chunk_ids":["voice-class-posture-and-breathing-alignment"],"reference_answer":"双脚约肩宽，上身放松且保持对齐。"}
+{"id":"GR-007","group":"direct","question":"教材里所说的逐句跟唱，学完第二句后怎么把它接进去？","relevant_chunk_ids":["voice-class-learning-a-song-echo"],"reference_answer":"模仿每句，再把已学的句子连起来，随后逐句增加。"}
+{"id":"GR-008","group":"direct","question":"热身的咬字练习用 ming 做五音上下行时，每个音结尾保留什么？","relevant_chunk_ids":["voice-class-warmups-and-practice-articulation"],"reference_answer":"保留 ming 结尾的 ng。"}
+{"id":"GR-009","group":"direct","question":"钢琴上 E 和 F 都是白键，它们之间是半音还是全音？","relevant_chunk_ids":["theory-steps-semitone"],"reference_answer":"是一个半音，E 和 F 之间没有黑键。"}
+{"id":"GR-010","group":"direct","question":"C 到 G 的纯五度跨几个半音？","relevant_chunk_ids":["theory-interval-quality"],"reference_answer":"C 到 G 跨七个半音。"}
+{"id":"GR-011","group":"direct","question":"从一个 C 到高八度的 C，和从 C 到同一个 C，分别跨几个半音？","relevant_chunk_ids":["theory-interval-octave"],"reference_answer":"纯八度跨 12 个半音，纯一度跨 0 个半音。"}
+{"id":"GR-012","group":"direct","question":"调号里写的 F♯ 默认影响哪几个八度的 F？","relevant_chunk_ids":["theory-key-signature-meaning"],"reference_answer":"适用范围内各八度的 F 默认都升为 F♯，除非有临时记号。"}
+{"id":"GR-013","group":"direct","question":"四分休止符和四分音符时值一样吗？","relevant_chunk_ids":["theory-duration-rests"],"reference_answer":"一样，休止符的对应时值内不发声。"}
+{"id":"GR-014","group":"direct","question":"延音线把两个同音高音连起来，第二个音要重新起音吗？","relevant_chunk_ids":["theory-duration-tie"],"reference_answer":"不重新起音，连续保持两个音的合计时值。"}
+{"id":"GR-015","group":"direct","question":"9/8 按复拍子数有几个大拍？下方的 8 表示什么？","relevant_chunk_ids":["theory-compound-meter-group"],"reference_answer":"一般有三个大拍，8 表示每个细分是一个八分音符。"}
+{"id":"GR-016","group":"direct","question":"歌谱上写 ritardando 时，这一段的速度要怎么变化？","relevant_chunk_ids":["theory-tempo-terms"],"reference_answer":"在一段时间内逐渐放慢。"}
+{"id":"GR-017","group":"paraphrase","question":"跟着示范录完，我唱出来经常比它低一点。想只唱一个声音先确认，怎么做？","relevant_chunk_ids":["flat"],"reference_answer":"听标准音，停顿后轻声模唱同一音，再比较录音。"}
+{"id":"GR-018","group":"paraphrase","question":"一口气唱完整句容易乱，我想先在谱上画好吸气的位置，再拆开练，怎么安排？","relevant_chunk_ids":["breath"],"reference_answer":"先标换气位置，慢速分组练，逐步连成完整乐句。"}
+{"id":"GR-019","group":"paraphrase","question":"同一句再录一遍时，我想听出究竟哪儿变好了，练和录的时候该控制什么？","relevant_chunk_ids":["phrases"],"reference_answer":"标记困难小节，一次改一个因素，以同调同速比较同段录音。"}
+{"id":"GR-020","group":"paraphrase","question":"声音往上拐到某个位置会突然断，我想先小声滑过去，范围应该放多大？","relevant_chunk_ids":["register"],"reference_answer":"在舒适音域内小声滑音，缩小范围，避免为高音增加音量。"}
+{"id":"GR-021","group":"paraphrase","question":"有一句几个音跑得很快，正式唱歌前能不能先做一个和那句相像的准备动作？","relevant_chunk_ids":["voice-class-warmups-and-practice-song-fit"],"reference_answer":"选择贴合要练的乐句的热身，可以先练类似的快速音型。"}
+{"id":"GR-022","group":"paraphrase","question":"我想用‘呜’固定唱一个音，先从嗓子中间的位置开始，这项练习怎么安排持续时间？","relevant_chunk_ids":["voice-class-warmups-and-practice-single-note"],"reference_answer":"从音域中部和 oo 元音开始，可以按四拍的倍数延长。"}
+{"id":"GR-023","group":"paraphrase","question":"一个人在家唱歌，总感觉人有点歪，有什么办法能让我自己看出来？","relevant_chunk_ids":["voice-class-posture-and-breathing-self-check"],"reference_answer":"可以照全身镜观察，或录像回看自己的姿势。"}
+{"id":"GR-024","group":"paraphrase","question":"新歌先别加旋律，把词像说话一样念出来，这能帮我发现什么？","relevant_chunk_ids":["voice-class-learning-a-song-speak"],"reference_answer":"能理解歌词，并找到每个乐句需要突出的词。"}
+{"id":"GR-025","group":"paraphrase","question":"从钢琴上的 C 到 D，中间夹的黑键也算进去，按相邻键一步一步走，走了几步？","relevant_chunk_ids":["theory-steps-whole"],"reference_answer":"经 C♯ 共走两步，即两个半音或一个全音。"}
+{"id":"GR-026","group":"paraphrase","question":"琴上白键黑键挨着一个个弹，走出来的这一串音叫什么？","relevant_chunk_ids":["theory-steps-chromatic"],"reference_answer":"叫半音音阶，相邻音都是半音。"}
+{"id":"GR-027","group":"paraphrase","question":"歌原来的位置不合适，想换个位置，让最高音不费力、最低音也够得着，该怎么选？","relevant_chunk_ids":["theory-transpose-range"],"reference_answer":"试听整体升降后的旋律，选择上下两端都落在可唱音域的新调。"}
+{"id":"GR-028","group":"paraphrase","question":"谱头只写了一个意大利语的快慢词。它和写了一个节拍器数字有什么分别？","relevant_chunk_ids":["theory-tempo-terms"],"reference_answer":"速度词提示相对快慢，节拍器数字指定明确的速度。"}
+{"id":"GR-029","group":"paraphrase","question":"一分钟有六十秒，如果每秒听到节拍器响两下，速度栏应该填多少？","relevant_chunk_ids":["theory-tempo-bpm"],"reference_answer":"每秒两拍等于每分钟 120 拍，即 120 BPM。"}
+{"id":"GR-030","group":"paraphrase","question":"歌谱有一小段要保持安静，嘴巴停下时，心里还得接着数吗？","relevant_chunk_ids":["theory-duration-rests"],"reference_answer":"仍要按拍数完静默的时值，然后再进入下一个音。"}
+{"id":"GR-031","group":"paraphrase","question":"一首每小节四拍的曲子，开头只唱一下就到下一小节的大落点，开头这一下该数成几？","relevant_chunk_ids":["theory-pickup-example"],"reference_answer":"可把开头一拍理解成第 4 拍，下一小节从强拍第 1 拍开始。"}
+{"id":"GR-032","group":"paraphrase","question":"两个音写在相同高度，中间用一条弯线接着，唱到后面要再开一次声吗？","relevant_chunk_ids":["theory-duration-tie"],"reference_answer":"若为同音相连的延音线，应连续唱满两音的时值。"}
+{"id":"GR-033","group":"multi_evidence","question":"报告说我的中位音分是负数，这说明什么？先用一个音怎么验证这次结果？","relevant_chunk_ids":["pitch","flat"],"reference_answer":"负音分代表相对目标偏低，先听标准音再做单音跟唱复查。"}
+{"id":"GR-034","group":"multi_evidence","question":"想用单音跟唱复查偏低。除了怎么模唱，两次录音里参考调、速度和麦克风距离应该怎样设？","relevant_chunk_ids":["flat","record"],"reference_answer":"听标准音再轻声模唱，并在两次录音中保持参考调、速度和录音距离一致。"}
+{"id":"GR-035","group":"multi_evidence","question":"想复测一个越拖越飘的长音，音高曲线取哪一段看？还要控制哪些录音条件才好比较？","relevant_chunk_ids":["sustain","record"],"reference_answer":"比较去除起音和收音后的持续段，保持参考调、速度和录音距离一致。"}
+{"id":"GR-036","group":"multi_evidence","question":"唱练习老拖拍。先拆开用节拍器怎么练，之后如何复录同一小节确认有没有进步？","relevant_chunk_ids":["rhythm","phrases"],"reference_answer":"慢速打拍、念节奏再加旋律，只改一个因素，用相同调与速度复录同段。"}
+{"id":"GR-037","group":"multi_evidence","question":"唱高一点容易破音，过渡处用什么轻量练法？唇颤音又做不顺，先用什么方式热身？","relevant_chunk_ids":["register","lip"],"reference_answer":"在舒适范围做轻声滑音，唇颤音难以完成时改用轻声哼鸣。"}
+{"id":"GR-038","group":"multi_evidence","question":"站唱时双脚怎么放？上身感觉歪的话，自己用镜子或手机怎么检查？","relevant_chunk_ids":["voice-class-posture-and-breathing-alignment","voice-class-posture-and-breathing-self-check"],"reference_answer":"双脚约肩宽、上身放松对齐，并用全身镜或手机录像自查。"}
+{"id":"GR-039","group":"multi_evidence","question":"教材把单音延长和窄音域练习都列进了热身吗？后一项可以用哪五个级数练？","relevant_chunk_ids":["voice-class-warmups-and-practice-sequence","voice-class-warmups-and-practice-five-note"],"reference_answer":"两项均在热身清单里，窄音域示例是从第 5 级向下唱到第 1 级。"}
+{"id":"GR-040","group":"multi_evidence","question":"学第一遍新歌，怎样听一句回唱一句并把句子连起来？把歌词朗读出来又能帮我找什么？","relevant_chunk_ids":["voice-class-learning-a-song-echo","voice-class-learning-a-song-speak"],"reference_answer":"逐句模唱并逐步串连，朗读歌词可帮助理解意思和确定句内重点。"}
+{"id":"GR-041","group":"multi_evidence","question":"学歌时去掉原唱但保留伴奏，有什么好处？后来连伴奏也去掉，再录下清唱回听有什么用途？","relevant_chunk_ids":["voice-class-learning-a-song-accompaniment","voice-class-learning-a-song-recording"],"reference_answer":"伴奏可提供音高参照并减少跟原唱的依赖，清唱回录能帮助发现先前被遮盖的问题。"}
+{"id":"GR-042","group":"multi_evidence","question":"一个长乐句总换不上气，怎么标换气并拆分？我想每一轮只改一个因素，再用同样条件复录比对。","relevant_chunk_ids":["breath","phrases"],"reference_answer":"标记换气位、慢速分组再连起来，并按同调同速只改一个因素复录比较。"}
+{"id":"GR-043","group":"multi_evidence","question":"一个纯八度有多少个半音？按两个半音一个全音，把它换算成多少个全音？","relevant_chunk_ids":["theory-interval-octave","theory-steps-whole"],"reference_answer":"一个纯八度有 12 个半音，按两个半音一个全音换算为 6 个全音。"}
+{"id":"GR-044","group":"multi_evidence","question":"为什么 G 大调的第七级唱 F♯？写在调号里的 F♯ 只默认升和这一处同八度的 F 吗？","relevant_chunk_ids":["theory-major-tonic","theory-key-signature-meaning"],"reference_answer":"第七级到主音需要一个半音，故为 F♯。F♯ 调号作用于各八度的 F。"}
+{"id":"GR-045","group":"multi_evidence","question":"把一段旋律整体移调会改变两个音之间的距离吗？移调前 C 到 E 按音名数是几度？","relevant_chunk_ids":["theory-transpose-rule","theory-interval-size"],"reference_answer":"整体移调保留音程，C 到 E 数 C、D、E 为三度。"}
+{"id":"GR-046","group":"multi_evidence","question":"6/8 中每个大拍是哪一种附点音符？给普通四分音符加一个附点会增加原来的多少时值？","relevant_chunk_ids":["theory-compound-meter-six-eight","theory-duration-dotted"],"reference_answer":"每个大拍为一个附点四分音符，一个附点增加原时值的一半。"}
+{"id":"GR-047","group":"multi_evidence","question":"4/4 的一小节以哪种音符为拍、共有几拍？每一拍里又有多少个十六分音符时值？","relevant_chunk_ids":["theory-simple-meter-signature","theory-duration-division"],"reference_answer":"每小节四拍，以四分音符为一拍，每拍有四个十六分音符的时值。"}
+{"id":"GR-048","group":"multi_evidence","question":"四分音符等于 120 BPM 的 3/4，单拍和整小节各几秒？","relevant_chunk_ids":["theory-tempo-bpm","theory-simple-meter-three-four"],"reference_answer":"每拍 0.5 秒，每小节三拍，所以 1.5 秒。"}
+{"id":"GR-049","group":"multi_evidence","question":"4/4 开头一拍的弱起该数成第几拍？如果那个位置写的是四分休止符，要发声还是等完这一拍？","relevant_chunk_ids":["theory-pickup-example","theory-duration-rests"],"reference_answer":"弱起的一拍可数作第 4 拍，四分休止符占同样时值，这一拍等待而不发声。"}
+{"id":"GR-050","group":"multi_evidence","question":"3/4 和 6/8 都写六个八分却总唱成同一种重音，怎么分组？练不顺时怎样先不唱旋律练节奏？","relevant_chunk_ids":["theory-compound-meter-compare","rhythm"],"reference_answer":"3/4 分成 2+2+2，6/8 分成 3+3。先慢速打拍，再念节奏，最后加旋律。"}

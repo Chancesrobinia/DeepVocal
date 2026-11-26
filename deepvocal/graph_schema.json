@@ -1,0 +1,1250 @@
+{
+  "entities": [
+    {"id": "falsetto", "name": "假声", "kind": "register", "aliases": ["falsetto", "假音"]},
+    {"id": "vocal-register", "name": "声区", "aliases": ["vocal register", "vocal registers", "声区机制"]},
+    {"id": "light-mechanism", "name": "轻机制", "kind": "register", "aliases": ["light mechanism", "轻声区"]},
+    {"id": "heavy-mechanism", "name": "重机制", "kind": "register", "aliases": ["heavy mechanism", "重声区"]},
+    {"id": "phonation", "name": "发声", "aliases": ["phonation", "歌唱发声"]},
+    {"id": "larynx", "name": "喉部", "kind": "anatomy", "aliases": ["larynx", "喉头"]},
+    {"id": "larynx-front-view", "name": "喉部正面图", "kind": "figure", "aliases": ["front view of larynx", "喉部结构图", "喉头解剖图"]},
+    {"id": "vocal-folds", "name": "声带", "kind": "anatomy", "aliases": ["vocal fold", "vocal folds", "vocal cords"]},
+    {"id": "vocal-tract", "name": "声道", "kind": "anatomy", "aliases": ["vocal tract"]},
+    {"id": "glottis", "name": "声门", "kind": "anatomy", "aliases": ["glottis"]},
+    {"id": "thyroid-cartilage", "name": "甲状软骨", "kind": "anatomy", "aliases": ["thyroid cartilage"]},
+    {"id": "cricoid-cartilage", "name": "环状软骨", "kind": "anatomy", "aliases": ["cricoid cartilage"]},
+    {"id": "arytenoid-cartilage", "name": "杓状软骨", "kind": "anatomy", "aliases": ["arytenoid cartilages", "arytenoid cartilage"]},
+    {"id": "cricothyroid-muscles", "name": "环甲肌", "kind": "anatomy", "aliases": ["cricothyroid muscles", "cricothyroid muscle"]},
+    {"id": "thyroarytenoid", "name": "甲杓肌", "kind": "anatomy", "aliases": ["甲状杓状肌", "thyroarytenoid", "thyroarytenoid muscle", "thyroarytenoid muscles"]},
+    {"id": "sternothyroid", "name": "胸骨甲状肌", "kind": "anatomy", "aliases": ["sternothyroid", "sternothyroid muscle"]},
+    {"id": "thyrohyoid-muscle", "name": "甲状舌骨肌", "kind": "anatomy", "aliases": ["thyrohyoid muscle", "thyrohyoid muscles"]},
+    {"id": "hyoid-bone", "name": "舌骨", "kind": "anatomy", "aliases": ["hyoid bone"]},
+    {"id": "epiglottis", "name": "会厌", "kind": "anatomy", "aliases": ["epiglottis"]},
+    {"id": "resonance", "name": "共鸣", "aliases": ["resonance", "歌唱共鸣"]},
+    {"id": "soft-palate", "name": "软腭", "kind": "anatomy", "aliases": ["soft palate", "软颚"]},
+    {"id": "breathy-tone", "name": "气声", "kind": "issue", "aliases": ["breathy tone", "漏气音"]},
+    {"id": "pressed-tone", "name": "挤压音色", "kind": "issue", "aliases": ["pressed tone", "pressed or tight tone", "发声紧挤"]},
+    {"id": "articulation", "name": "咬字", "aliases": ["articulation", "吐字"]},
+    {"id": "ipa", "name": "国际音标", "aliases": ["IPA", "international phonetic alphabet"]},
+    {"id": "closed-vowels", "name": "闭元音", "aliases": ["closed vowels", "closed vowel"]},
+    {"id": "open-vowels", "name": "开元音", "aliases": ["open vowels", "open vowel"]},
+    {"id": "voiced-consonants", "name": "浊辅音", "aliases": ["voiced consonants", "voiced consonant"]},
+    {"id": "unvoiced-consonants", "name": "清辅音", "aliases": ["unvoiced consonants", "unvoiced consonant", "voiceless consonants"]},
+    {"id": "vocal-exercise-score", "name": "练声谱例", "kind": "figure", "aliases": ["vocal exercises appendix", "练声五线谱", "声乐练习谱"]},
+    {"id": "speech-to-singing", "name": "从说话过渡到歌唱", "kind": "practice", "aliases": ["speech to singing", "speech-to-singing"]},
+    {"id": "sigh-glide", "name": "叹息滑音", "kind": "practice", "aliases": ["sigh-glide", "sigh glide", "叹气滑音"]},
+    {"id": "puppy-whine", "name": "小狗呜咽练习", "kind": "practice", "aliases": ["puppy whine"]},
+    {"id": "voice-type", "name": "嗓音类型", "aliases": ["voice type", "voice types", "声部类型"]},
+    {"id": "tessitura", "name": "舒适音区", "aliases": ["tessitura", "常用音区"]},
+    {"id": "adolescent-voice", "name": "青少年变声", "aliases": ["adolescent voice", "adolescent singer", "adolescent singers", "变声期"]},
+    {
+      "id": "pitch",
+      "name": "音高",
+      "kind": "measure",
+      "aliases": [
+        "pitch"
+      ],
+      "broad": true
+    },
+    {
+      "id": "pitch-accuracy",
+      "name": "音准",
+      "kind": "measure",
+      "aliases": [
+        "intonation"
+      ],
+      "broad": true
+    },
+    {
+      "id": "cents",
+      "name": "音分",
+      "kind": "measure",
+      "aliases": [
+        "cent",
+        "cents"
+      ]
+    },
+    {
+      "id": "flat",
+      "name": "音准偏低",
+      "kind": "issue",
+      "aliases": [
+        "音高偏低",
+        "唱低了",
+        "唱得偏低"
+      ]
+    },
+    {
+      "id": "pitch-error",
+      "name": "音高偏差",
+      "kind": "measure",
+      "aliases": [
+        "pitch deviation"
+      ]
+    },
+    {
+      "id": "off-pitch",
+      "name": "跑调",
+      "kind": "issue",
+      "aliases": [
+        "走音"
+      ]
+    },
+    {
+      "id": "single-note-matching",
+      "name": "单音跟唱",
+      "kind": "practice",
+      "aliases": [
+        "单音模唱",
+        "听一个音再模唱"
+      ]
+    },
+    {
+      "id": "sustained-pitch-stability",
+      "name": "长音稳定性",
+      "kind": "measure",
+      "aliases": [
+        "长音音高稳定性"
+      ]
+    },
+    {
+      "id": "pitch-fluctuation",
+      "name": "音高波动",
+      "kind": "issue",
+      "aliases": [
+        "长音发飘"
+      ]
+    },
+    {
+      "id": "sustained-note-practice",
+      "name": "短长音练习",
+      "kind": "practice",
+      "aliases": [
+        "短长音"
+      ]
+    },
+    {
+      "id": "vibrato",
+      "name": "颤音",
+      "kind": "technique",
+      "aliases": [
+        "vibrato"
+      ]
+    },
+    {
+      "id": "rhythm",
+      "name": "节奏",
+      "kind": "concept",
+      "aliases": [
+        "rhythm"
+      ],
+      "broad": true
+    },
+    {
+      "id": "onset-deviation",
+      "name": "起音偏差",
+      "kind": "measure",
+      "aliases": [
+        "起音时间偏差"
+      ]
+    },
+    {
+      "id": "metronome-practice",
+      "name": "节拍器练习",
+      "kind": "practice",
+      "aliases": [
+        "节拍器跟拍"
+      ]
+    },
+    {
+      "id": "metronome",
+      "name": "节拍器",
+      "kind": "concept",
+      "aliases": [
+        "metronome"
+      ]
+    },
+    {
+      "id": "duration",
+      "name": "时值",
+      "kind": "measure",
+      "aliases": [
+        "duration",
+        "音符时长"
+      ],
+      "broad": true
+    },
+    {
+      "id": "time-signature",
+      "name": "拍号",
+      "kind": "concept",
+      "aliases": [
+        "time signature"
+      ],
+      "broad": true
+    },
+    {
+      "id": "beat",
+      "name": "节拍",
+      "kind": "concept",
+      "aliases": [
+        "beat",
+        "beats"
+      ],
+      "broad": true
+    },
+    {
+      "id": "measure",
+      "name": "小节",
+      "kind": "concept",
+      "aliases": [
+        "measure",
+        "bar"
+      ],
+      "broad": true
+    },
+    {
+      "id": "barline",
+      "name": "小节线",
+      "kind": "concept",
+      "aliases": [
+        "bar line",
+        "barline"
+      ]
+    },
+    {
+      "id": "onset",
+      "name": "起音",
+      "kind": "concept",
+      "aliases": [
+        "note onset"
+      ],
+      "broad": true
+    },
+    {
+      "id": "passaggio",
+      "name": "换声区",
+      "kind": "concept",
+      "aliases": [
+        "passaggio",
+        "换声过渡区",
+        "声区转换区"
+      ]
+    },
+    {
+      "id": "voice-break",
+      "name": "破音",
+      "kind": "issue",
+      "aliases": [
+        "突然断声",
+        "破嗓音",
+        "voice break"
+      ]
+    },
+    {
+      "id": "quiet-glide",
+      "name": "轻声滑音",
+      "kind": "practice",
+      "aliases": [
+        "小声滑音",
+        "轻声滑音练习"
+      ]
+    },
+    {
+      "id": "lip-trill",
+      "name": "唇颤音",
+      "kind": "practice",
+      "aliases": [
+        "唇震音",
+        "lip trill",
+        "lip trills"
+      ]
+    },
+    {
+      "id": "humming",
+      "name": "哼鸣",
+      "kind": "practice",
+      "aliases": [
+        "轻声哼鸣",
+        "humming"
+      ]
+    },
+    {
+      "id": "warm-up",
+      "name": "热身",
+      "kind": "concept",
+      "aliases": [
+        "暖嗓",
+        "声乐热身",
+        "warmup",
+        "warm up",
+        "warm-up",
+        "warming up"
+      ],
+      "broad": true
+    },
+    {
+      "id": "sustained-note",
+      "name": "单音延长",
+      "kind": "practice",
+      "aliases": [
+        "单音持续唱",
+        "sustained on a vowel",
+        "sing a single note"
+      ]
+    },
+    {
+      "id": "narrow-range",
+      "name": "窄音域练习",
+      "kind": "practice",
+      "aliases": [
+        "小音域练习",
+        "narrow range exercise"
+      ]
+    },
+    {
+      "id": "descending-five",
+      "name": "五音下行",
+      "kind": "practice",
+      "aliases": [
+        "五音下行练习",
+        "five note scale going down"
+      ]
+    },
+    {
+      "id": "articulation-exercise",
+      "name": "咬字练习",
+      "kind": "practice",
+      "aliases": [
+        "发音器官练习",
+        "articulator exercise",
+        "works your articulators"
+      ]
+    },
+    {
+      "id": "breathing-exercise",
+      "name": "呼吸练习",
+      "kind": "practice",
+      "aliases": [
+        "breathing exercise"
+      ]
+    },
+    {
+      "id": "practice-goal",
+      "name": "练习目标",
+      "kind": "concept",
+      "broad": true
+    },
+    {
+      "id": "singing-posture",
+      "name": "歌唱姿势",
+      "kind": "concept",
+      "aliases": [
+        "唱歌姿势",
+        "演唱姿势",
+        "姿势",
+        "singing posture",
+        "posture"
+      ],
+      "broad": true
+    },
+    {
+      "id": "standing-posture",
+      "name": "站姿",
+      "kind": "concept",
+      "aliases": [
+        "站立姿势",
+        "standing posture"
+      ]
+    },
+    {
+      "id": "mirror-check",
+      "name": "镜子观察",
+      "kind": "practice",
+      "aliases": [
+        "照镜子",
+        "全身镜",
+        "mirror"
+      ]
+    },
+    {
+      "id": "video-check",
+      "name": "录像自查",
+      "kind": "practice",
+      "aliases": [
+        "录像回看",
+        "video record yourself"
+      ]
+    },
+    {
+      "id": "phrase-grouping",
+      "name": "短句分组",
+      "kind": "practice",
+      "aliases": [
+        "乐句拆分",
+        "分句练习"
+      ]
+    },
+    {
+      "id": "long-phrase",
+      "name": "长乐句",
+      "kind": "concept",
+      "aliases": [
+        "长句子"
+      ]
+    },
+    {
+      "id": "breathing-point",
+      "name": "换气",
+      "kind": "practice",
+      "aliases": [
+        "换气位置",
+        "吸气位置"
+      ]
+    },
+    {
+      "id": "retest",
+      "name": "复测",
+      "kind": "practice",
+      "aliases": [
+        "再次录制",
+        "重新测评"
+      ]
+    },
+    {
+      "id": "recording-quality",
+      "name": "录音质量",
+      "kind": "measure",
+      "aliases": [
+        "录音条件"
+      ],
+      "broad": true
+    },
+    {
+      "id": "reference-key",
+      "name": "参考调",
+      "kind": "concept",
+      "aliases": [
+        "参考曲调",
+        "参考调性"
+      ]
+    },
+    {
+      "id": "reference-pitch",
+      "name": "音高参照",
+      "kind": "concept",
+      "aliases": [
+        "参考音高",
+        "pitch centers"
+      ]
+    },
+    {
+      "id": "accompaniment",
+      "name": "伴奏",
+      "kind": "concept",
+      "aliases": [
+        "accompaniment",
+        "karaoke track"
+      ],
+      "broad": true
+    },
+    {
+      "id": "singing-solo",
+      "name": "清唱",
+      "kind": "practice",
+      "aliases": [
+        "a cappella"
+      ]
+    },
+    {
+      "id": "listening-back",
+      "name": "录音复听",
+      "kind": "practice",
+      "aliases": [
+        "录音回听",
+        "recording yourself"
+      ]
+    },
+    {
+      "id": "learning-song",
+      "name": "学唱新歌",
+      "kind": "concept",
+      "aliases": [
+        "学歌",
+        "learn a song"
+      ],
+      "broad": true
+    },
+    {
+      "id": "echo-singing",
+      "name": "逐句跟唱",
+      "kind": "practice",
+      "aliases": [
+        "逐句模唱",
+        "learning by rote"
+      ]
+    },
+    {
+      "id": "speak-lyrics",
+      "name": "朗读歌词",
+      "kind": "practice",
+      "aliases": [
+        "念歌词",
+        "speaking the text"
+      ]
+    },
+    {
+      "id": "sheet-music",
+      "name": "看谱学唱",
+      "kind": "practice",
+      "aliases": [
+        "使用乐谱",
+        "using sheet music"
+      ]
+    },
+    {
+      "id": "solfege",
+      "name": "唱名",
+      "kind": "concept",
+      "aliases": [
+        "solfège",
+        "solfege",
+        "solfedge"
+      ]
+    },
+    {
+      "id": "sight-singing",
+      "name": "视唱",
+      "kind": "practice",
+      "aliases": [
+        "sight singing",
+        "sight reading"
+      ]
+    },
+    {
+      "id": "voice-range",
+      "name": "歌唱音域",
+      "kind": "concept",
+      "aliases": [
+        "可唱音域",
+        "演唱音域"
+      ]
+    },
+    {
+      "id": "semitone",
+      "name": "半音",
+      "kind": "concept",
+      "aliases": [
+        "半度音",
+        "semitone",
+        "semitones",
+        "half step",
+        "half steps"
+      ],
+      "broad": true
+    },
+    {
+      "id": "whole-step",
+      "name": "全音",
+      "kind": "concept",
+      "aliases": [
+        "whole step",
+        "whole steps",
+        "whole tone"
+      ]
+    },
+    {
+      "id": "chromatic-scale",
+      "name": "半音音阶",
+      "kind": "concept",
+      "aliases": [
+        "chromatic scale"
+      ]
+    },
+    {
+      "id": "interval",
+      "name": "音程",
+      "kind": "concept",
+      "aliases": [
+        "interval"
+      ],
+      "broad": true
+    },
+    {
+      "id": "interval-size",
+      "name": "度数",
+      "kind": "measure",
+      "aliases": [
+        "音程度数"
+      ]
+    },
+    {
+      "id": "major-third",
+      "name": "大三度",
+      "kind": "concept",
+      "aliases": [
+        "major third"
+      ]
+    },
+    {
+      "id": "minor-third",
+      "name": "小三度",
+      "kind": "concept",
+      "aliases": [
+        "minor third"
+      ]
+    },
+    {
+      "id": "perfect-fifth",
+      "name": "纯五度",
+      "kind": "concept",
+      "aliases": [
+        "perfect fifth"
+      ]
+    },
+    {
+      "id": "octave",
+      "name": "纯八度",
+      "kind": "concept",
+      "aliases": [
+        "octave",
+        "八度"
+      ]
+    },
+    {
+      "id": "unison",
+      "name": "纯一度",
+      "kind": "concept",
+      "aliases": [
+        "纯同度",
+        "同度",
+        "unison"
+      ]
+    },
+    {
+      "id": "major-scale",
+      "name": "大调音阶",
+      "kind": "concept",
+      "aliases": [
+        "major scale"
+      ]
+    },
+    {
+      "id": "tonic",
+      "name": "主音",
+      "kind": "concept",
+      "aliases": [
+        "tonic"
+      ],
+      "broad": true
+    },
+    {
+      "id": "major-steps",
+      "name": "全半音顺序",
+      "kind": "concept",
+      "aliases": [
+        "全半音排列"
+      ]
+    },
+    {
+      "id": "g-major",
+      "name": "G大调",
+      "kind": "key",
+      "aliases": [
+        "G 大调",
+        "G major"
+      ]
+    },
+    {
+      "id": "c-major",
+      "name": "C大调",
+      "kind": "key",
+      "aliases": [
+        "C 大调",
+        "C major"
+      ]
+    },
+    {
+      "id": "b-flat-major",
+      "name": "降B大调",
+      "kind": "key",
+      "aliases": [
+        "降 B 大调",
+        "B♭大调",
+        "B♭ 大调",
+        "B flat major"
+      ]
+    },
+    {
+      "id": "g-note",
+      "name": "G",
+      "kind": "note",
+      "aliases": [
+        "G 音"
+      ]
+    },
+    {
+      "id": "key-signature",
+      "name": "调号",
+      "kind": "concept",
+      "aliases": [
+        "key signature"
+      ],
+      "broad": true
+    },
+    {
+      "id": "sharp",
+      "name": "升号",
+      "kind": "concept",
+      "aliases": [
+        "sharp sign"
+      ]
+    },
+    {
+      "id": "flat-sign",
+      "name": "降号",
+      "kind": "concept",
+      "aliases": [
+        "flat sign"
+      ]
+    },
+    {
+      "id": "accidental",
+      "name": "临时升降记号",
+      "kind": "concept",
+      "aliases": [
+        "临时记号",
+        "accidental"
+      ]
+    },
+    {
+      "id": "transpose",
+      "name": "移调",
+      "kind": "technique",
+      "aliases": [
+        "整体移调",
+        "transpose",
+        "transposition",
+        "整体升降"
+      ]
+    },
+    {
+      "id": "lower-key",
+      "name": "降调",
+      "kind": "technique",
+      "aliases": [
+        "降低调性"
+      ]
+    },
+    {
+      "id": "quarter-note",
+      "name": "四分音符",
+      "kind": "concept",
+      "aliases": [
+        "quarter note"
+      ]
+    },
+    {
+      "id": "eighth-note",
+      "name": "八分音符",
+      "kind": "concept",
+      "aliases": [
+        "eighth note"
+      ]
+    },
+    {
+      "id": "sixteenth-note",
+      "name": "十六分音符",
+      "kind": "concept",
+      "aliases": [
+        "sixteenth note"
+      ]
+    },
+    {
+      "id": "dotted-quarter",
+      "name": "附点四分音符",
+      "kind": "concept",
+      "aliases": [
+        "dotted quarter note"
+      ]
+    },
+    {
+      "id": "dot",
+      "name": "附点",
+      "kind": "concept",
+      "aliases": [
+        "augmentation dot"
+      ]
+    },
+    {
+      "id": "rest",
+      "name": "休止符",
+      "kind": "concept",
+      "aliases": [
+        "rest",
+        "rests",
+        "空拍"
+      ]
+    },
+    {
+      "id": "quarter-rest",
+      "name": "四分休止符",
+      "kind": "concept",
+      "aliases": [
+        "quarter rest"
+      ]
+    },
+    {
+      "id": "eighth-rest",
+      "name": "八分休止符",
+      "kind": "concept",
+      "aliases": [
+        "eighth rest"
+      ]
+    },
+    {
+      "id": "tie",
+      "name": "延音线",
+      "kind": "concept",
+      "aliases": [
+        "同音连线",
+        "tie"
+      ]
+    },
+    {
+      "id": "simple-meter",
+      "name": "单拍子",
+      "kind": "concept",
+      "aliases": [
+        "单式拍子",
+        "simple meter"
+      ]
+    },
+    {
+      "id": "simple-triple",
+      "name": "单三拍子",
+      "kind": "concept",
+      "aliases": [
+        "simple triple"
+      ]
+    },
+    {
+      "id": "compound-meter",
+      "name": "复拍子",
+      "kind": "concept",
+      "aliases": [
+        "复式拍子",
+        "compound meter"
+      ]
+    },
+    {
+      "id": "compound-duple",
+      "name": "复二拍子",
+      "kind": "concept",
+      "aliases": [
+        "compound duple"
+      ]
+    },
+    {
+      "id": "meter-2-4",
+      "name": "2/4",
+      "kind": "meter",
+      "aliases": [
+        "四二拍"
+      ]
+    },
+    {
+      "id": "meter-3-4",
+      "name": "3/4",
+      "kind": "meter",
+      "aliases": [
+        "四三拍",
+        "三四拍"
+      ]
+    },
+    {
+      "id": "meter-4-4",
+      "name": "4/4",
+      "kind": "meter",
+      "aliases": [
+        "四四拍"
+      ]
+    },
+    {
+      "id": "meter-6-8",
+      "name": "6/8",
+      "kind": "meter",
+      "aliases": [
+        "八六拍",
+        "六八拍"
+      ]
+    },
+    {
+      "id": "meter-9-8",
+      "name": "9/8",
+      "kind": "meter",
+      "aliases": [
+        "八九拍"
+      ]
+    },
+    {
+      "id": "meter-12-8",
+      "name": "12/8",
+      "kind": "meter",
+      "aliases": [
+        "八十二拍"
+      ]
+    },
+    {
+      "id": "pickup-note",
+      "name": "弱起音",
+      "kind": "concept",
+      "aliases": [
+        "弱起",
+        "pickup note"
+      ]
+    },
+    {
+      "id": "pickup-measure",
+      "name": "弱起小节",
+      "kind": "concept",
+      "aliases": [
+        "不完全小节",
+        "pickup measure"
+      ]
+    },
+    {
+      "id": "downbeat",
+      "name": "强拍",
+      "kind": "concept",
+      "aliases": [
+        "重拍",
+        "downbeat"
+      ],
+      "broad": true
+    },
+    {
+      "id": "tempo",
+      "name": "速度",
+      "kind": "measure",
+      "aliases": [
+        "tempo",
+        "演唱速度"
+      ],
+      "broad": true
+    },
+    {
+      "id": "bpm",
+      "name": "BPM",
+      "kind": "measure",
+      "aliases": [
+        "每分钟拍数"
+      ]
+    },
+    {
+      "id": "beat-duration",
+      "name": "拍长",
+      "kind": "measure",
+      "aliases": [
+        "一拍的秒数"
+      ]
+    },
+    {
+      "id": "ritardando",
+      "name": "渐慢",
+      "kind": "concept",
+      "aliases": [
+        "ritardando",
+        "渐缓"
+      ]
+    },
+    {
+      "id": "count-2",
+      "name": "2",
+      "kind": "value",
+      "aliases": [
+        "二",
+        "两",
+        "两个"
+      ]
+    },
+    {
+      "id": "count-3",
+      "name": "3",
+      "kind": "value",
+      "aliases": [
+        "三",
+        "三个"
+      ]
+    },
+    {
+      "id": "count-4",
+      "name": "4",
+      "kind": "value",
+      "aliases": [
+        "四",
+        "四个"
+      ]
+    },
+    {
+      "id": "count-7",
+      "name": "7",
+      "kind": "value",
+      "aliases": [
+        "七"
+      ]
+    },
+    {
+      "id": "count-12",
+      "name": "12",
+      "kind": "value",
+      "aliases": [
+        "十二",
+        "十二个"
+      ]
+    }
+  ],
+  "predicates": [
+    {"id": "illustrates", "name": "图示", "head_kinds": ["figure"], "tail_kinds": ["anatomy", "practice"]},
+    {"id": "has-muscle-attachment", "name": "有附着肌", "head_kinds": ["anatomy"], "tail_kinds": ["anatomy"]},
+    {"id": "involves", "name": "涉及"},
+    {"id": "transitions-across", "name": "过渡涉及", "head_kinds": ["concept"], "tail_kinds": ["concept", "register"]},
+    {
+      "id": "represents",
+      "name": "用于表示"
+    },
+    {
+      "id": "has-issue",
+      "name": "常见偏差"
+    },
+    {
+      "id": "practice",
+      "name": "关联练习",
+      "tail_kinds": ["practice"],
+      "legacy_labels": [
+        "练习方法"
+      ]
+    },
+    {
+      "id": "observes",
+      "name": "关联观察"
+    },
+    {
+      "id": "related",
+      "name": "相关主题"
+    },
+    {
+      "id": "warmup-method",
+      "name": "可用热身"
+    },
+    {
+      "id": "method",
+      "name": "可用方法"
+    },
+    {
+      "id": "comparison-condition",
+      "name": "比较条件"
+    },
+    {
+      "id": "is-a",
+      "name": "属于"
+    },
+    {
+      "id": "beat-unit",
+      "name": "每大拍等于",
+      "head_kinds": ["meter"],
+      "legacy_labels": [
+        "以此为一拍"
+      ]
+    },
+    {
+      "id": "different-grouping",
+      "name": "大拍分组不同于"
+    },
+    {
+      "id": "double-duration",
+      "name": "时值等于两个"
+    },
+    {
+      "id": "triple-duration",
+      "name": "时值等于三个"
+    },
+    {
+      "id": "extends-duration",
+      "name": "延长原有"
+    },
+    {
+      "id": "silence-duration",
+      "name": "记写静默的"
+    },
+    {
+      "id": "merges-duration",
+      "name": "合并"
+    },
+    {
+      "id": "count-by-names",
+      "name": "按音名计数确定"
+    },
+    {
+      "id": "semitone-unit",
+      "name": "以半音衡量",
+      "legacy_labels": [
+        "相隔四个",
+        "相隔三个",
+        "相隔十二个"
+      ]
+    },
+    {
+      "id": "marks",
+      "name": "可以标记"
+    },
+    {
+      "id": "starts-at",
+      "name": "以此作为起点"
+    },
+    {
+      "id": "follows",
+      "name": "遵循"
+    },
+    {
+      "id": "tonic-concept",
+      "name": "对应主音概念",
+      "legacy_labels": [
+        "主音为G"
+      ]
+    },
+    {
+      "id": "before",
+      "name": "先于乐句的",
+      "legacy_labels": [
+        "出现在之前"
+      ]
+    },
+    {
+      "id": "includes",
+      "name": "包含",
+      "legacy_labels": [
+        "可包含"
+      ]
+    },
+    {
+      "id": "groups-beats",
+      "name": "描述拍的分组"
+    },
+    {
+      "id": "forms",
+      "name": "两个组成"
+    },
+    {
+      "id": "adjacent-interval",
+      "name": "相邻音相隔"
+    },
+    {
+      "id": "converts-to",
+      "name": "可换算为"
+    },
+    {
+      "id": "preserves",
+      "name": "保持"
+    },
+    {
+      "id": "moves-with",
+      "name": "伴随同向移动"
+    },
+    {
+      "id": "matches-key",
+      "name": "伴奏须同步调整"
+    },
+    {
+      "id": "provides",
+      "name": "提供"
+    },
+    {
+      "id": "self-check",
+      "name": "自查方法",
+      "tail_kinds": ["practice"]
+    },
+    {
+      "id": "example",
+      "name": "练习示例"
+    },
+    {
+      "id": "beat-count",
+      "name": "每小节大拍数",
+      "head_kinds": [
+        "meter"
+      ],
+      "tail_kinds": [
+        "value"
+      ],
+      "exclusive": true
+    },
+    {
+      "id": "semitone-count",
+      "name": "相隔的半音数",
+      "head_kinds": [
+        "concept"
+      ],
+      "tail_kinds": [
+        "value"
+      ],
+      "exclusive": true
+    },
+    {
+      "id": "has-tonic",
+      "name": "主音音名",
+      "head_kinds": [
+        "key"
+      ],
+      "tail_kinds": [
+        "note"
+      ],
+      "exclusive": true
+    }
+  ],
+  "rules": [
+    {
+      "predicate": "beat-count",
+      "pattern": "(?P<head>[1-9][0-9]?\\s*[/／]\\s*[1-9][0-9]?)\\s*常?按每小节(?P<tail>两|二|三|四|[234])个大拍"
+    },
+    {
+      "predicate": "beat-count",
+      "pattern": "(?P<head>[1-9][0-9]?\\s*[/／]\\s*[1-9][0-9]?)\\s*是单三拍子[，,]\\s*每小节有(?P<tail>三|3)个四分音符拍"
+    },
+    {
+      "predicate": "beat-count",
+      "pattern": "(?P<head>[234]\\s*[/／]\\s*4)\\s*每小节(?P<tail>两|二|三|四|[234])拍"
+    },
+    {
+      "predicate": "semitone-count",
+      "pattern": "(?P<tail>两个)连续的半音合起来是一个(?P<head>全音)"
+    },
+    {
+      "predicate": "semitone-count",
+      "pattern": "(?P<tail>[347])\\s*个半音[，,]\\s*为(?P<head>大三度|小三度|纯五度)"
+    },
+    {
+      "predicate": "semitone-count",
+      "pattern": "(?P<head>纯八度)跨\\s*(?P<tail>12|十二)\\s*个半音"
+    },
+    {
+      "predicate": "has-tonic",
+      "pattern": "(?P<head>G\\s*大调)的主音是\\s*(?P<tail>G)(?![a-zA-Z0-9])"
+    },
+    {
+      "predicate": "preserves",
+      "pattern": "整体(?P<head>移调)[^。]{0,100}。旋律音之间的(?P<tail>音程)保持不变"
+    },
+    {
+      "predicate": "merges-duration",
+      "pattern": "(?P<head>延音线)（tie）把[^。]{0,60}[，,]\\s*(?P<tail>时值)相加"
+    },
+    {
+      "predicate": "before",
+      "pattern": "(?P<head>弱起音)是在乐句第一个(?P<tail>强拍)到来之前"
+    },
+    {
+      "predicate": "self-check",
+      "pattern": "(?P<head>singing posture)\\. First, you can use a (?P<tail>mirror)"
+    }
+  ]
+}

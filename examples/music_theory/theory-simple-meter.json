@@ -1,0 +1,65 @@
+{
+  "id": "theory-simple-meter",
+  "title": "Open Music Theory",
+  "edition": "Chelsey Hamm、Kris Shaffer、Mark Gotham · CC BY-SA 4.0（中文改写）",
+  "source_url": "https://viva.pressbooks.pub/openmusictheory/chapter/simple-meter-and-time-signatures/",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-simple-meter-beat",
+      "section": "单拍子与拍号 · 节拍、小节与拍号",
+      "text": "节拍是规律反复的脉冲。若干拍按固定的组织方式形成一个小节，小节线划分各小节。拍号给出如何分组和采用什么音符单位的线索。单拍子的每拍可分成相等的两份。",
+      "entities": [
+        "节拍",
+        "拍号",
+        "小节",
+        "小节线",
+        "单拍子"
+      ]
+    },
+    {
+      "id": "theory-simple-meter-signature",
+      "section": "单拍子与拍号 · 单拍子拍号的上下数字",
+      "text": "单拍子拍号的上方数字表示每小节几拍，下方数字表示以什么音符为一拍。例如 2/4 每小节两拍、四分音符为一拍，4/4 每小节四拍、四分音符为一拍。拍号中的数字说明拍的组织，而节拍器标记说明拍走得多快。",
+      "entities": [
+        "拍号",
+        "2/4",
+        "4/4",
+        "单拍子",
+        "四分音符"
+      ]
+    },
+    {
+      "id": "theory-simple-meter-three-four",
+      "section": "单拍子与拍号 · 3/4 怎样数拍",
+      "text": "3/4 是单三拍子，每小节有三个四分音符拍，每拍可分成两个八分音符。按大拍数「1、2、3」，需要细分时可数「1-and、2-and、3-and」。因此一小节可以容纳六个八分音符，按 2+2+2 分组。",
+      "entities": [
+        "3/4",
+        "单三拍子",
+        "单拍子",
+        "四分音符",
+        "八分音符"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "拍号",
+      "relation": "描述拍的分组",
+      "tail": "小节",
+      "evidence_id": "theory-simple-meter-beat"
+    },
+    {
+      "head": "3/4",
+      "relation": "属于",
+      "tail": "单三拍子",
+      "evidence_id": "theory-simple-meter-three-four"
+    },
+    {
+      "head": "3/4",
+      "relation": "以此为一拍",
+      "tail": "四分音符",
+      "evidence_id": "theory-simple-meter-three-four"
+    }
+  ]
+}

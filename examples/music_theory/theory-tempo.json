@@ -1,0 +1,25 @@
+{
+  "id": "theory-tempo",
+  "title": "Understanding Basic Music Theory",
+  "edition": "Catherine Schmidt-Jones · LibreTexts · CC BY 3.0（中文改写）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Theory/Understanding_Basic_Music_Theory_%28Schmidt-Jones%29/02%3A_Notation_-_Time/2.08%3A_Tempo",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-tempo-bpm",
+      "section": "2.8 速度 · BPM 和一拍多长",
+      "text": "BPM 表示每分钟多少拍。把 60 除以 BPM 就能得到一拍的秒数。例如 120 BPM 是每秒两拍，每拍间隔 0.5 秒，60 BPM 是每秒一拍。看谱上的节拍器标记时，还要留意标记指定的是哪种音符作为一拍。",
+      "entities": ["BPM", "速度", "节拍器", "拍长"]
+    },
+    {
+      "id": "theory-tempo-terms",
+      "section": "2.8 速度 · 速度术语与变化",
+      "text": "速度（tempo）指节拍进行得有多快。节拍器标记给出明确的数值，Allegro、Andante 等词给出相对的速度感，具体演唱速度还要看谱和音乐语境。Ritardando 表示在一段时间内逐渐放慢。",
+      "entities": ["速度", "速度术语", "Allegro", "Andante", "渐慢"]
+    }
+  ],
+  "relations": [
+    {"head": "BPM", "relation": "用于表示", "tail": "速度", "evidence_id": "theory-tempo-bpm"},
+    {"head": "BPM", "relation": "可换算为", "tail": "拍长", "evidence_id": "theory-tempo-bpm"}
+  ]
+}

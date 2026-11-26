@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f6fb">
+  <meta name="theme-color" content="#f3f7fd">
   <title>DeepVocal · 声乐练习室</title>
-  <link rel="stylesheet" href="/static/styles.css?v=4">
-  <script defer src="/static/app.js?v=7"></script>
+  <link rel="stylesheet" href="/static/styles.css?v=10">
+  <script defer src="/static/app.js?v=38"></script>
 </head>
 <body>
   <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -22,6 +22,7 @@
     <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></symbol>
     <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></symbol>
     <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 1 2.6 6.4M3 12V6m0 6h6m3-5v5l3 2"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><path d="M3 12h6m0 0 4-6h7m-11 6 4 6h7m-3-15 3 3-3 3m0 6 3 3-3 3"/></symbol>
   </svg>
   <a href="#task-title" class="skip-link">跳到练习任务</a>
   <header class="topbar">
@@ -56,37 +57,31 @@
       <div class="hero-content">
         <h1 id="page-title">声乐练习台</h1>
         <p>从发声疑问到清唱测评，把反馈变成下一次练习。</p>
-        <button class="button hero-action" type="button" id="hero-assessment"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>开始录音测评</button>
+        <button class="button hero-action" type="button" id="hero-chat"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>开始对话</button>
       </div>
     </section>
-    <nav class="mode-grid" aria-label="选择练习任务">
-      <button class="mode" type="button" data-mode="qa" aria-pressed="true">
-        <span class="mode-icon lilac"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span><span><strong>声乐问答</strong><small>查发声技巧与练习方法</small></span><svg class="icon mode-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-      </button>
-      <button class="mode" type="button" data-mode="assessment" aria-pressed="false">
-        <span class="mode-icon rose"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg></span><span><strong>录音测评</strong><small>查看音准与起音偏差</small></span><svg class="icon mode-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-      </button>
-      <button class="mode" type="button" data-mode="practice_plan" aria-pressed="false">
-        <span class="mode-icon green"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span><span><strong>练习规划</strong><small>安排每天的训练</small></span><svg class="icon mode-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-      </button>
-      <button class="mode" type="button" data-mode="singing" aria-pressed="false">
-        <span class="mode-icon gold"><svg class="icon" aria-hidden="true"><use href="#i-music"/></svg></span><span><strong>示范音频</strong><small>生成可以跟唱的旋律</small></span><svg class="icon mode-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-      </button>
-    </nav>
     <div class="workspace">
       <section class="panel task" aria-labelledby="task-title">
         <div class="panel-heading">
-          <div><h2 id="task-title" tabindex="-1">声乐问答</h2><p id="task-description">提一个具体问题，查看导师的回答和引用资料。</p></div>
+          <div><h2 id="task-title" tabindex="-1">声乐对话</h2><p id="task-description">描述你的需求，DeepVocal 会自动分配任务。</p></div>
         </div>
         <button class="button quiet" id="older-turns" type="button" hidden>加载更早的对话</button>
         <div id="transcript" class="transcript" role="log" aria-label="会话与练习结果"></div>
         <form id="chat">
           <fieldset id="task-fields">
-            <label id="query-label" for="query">你的问题</label>
-            <textarea id="query" rows="3" maxlength="2400" placeholder="例如：换声区容易破音，应该怎么练？"></textarea>
+            <div class="agent-shortcuts" role="group" aria-label="选择 Agent">
+              <button class="agent-chip" type="button" data-agent="auto" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>自动分配</button>
+              <button class="agent-chip" type="button" data-agent="qa" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>声乐问答</button>
+              <button class="agent-chip" type="button" data-agent="assessment" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>录音测评</button>
+              <button class="agent-chip" type="button" data-agent="practice_plan" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>练习规划</button>
+              <button class="agent-chip" type="button" data-agent="singing" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-music"/></svg>歌曲翻唱</button>
+            </div>
+            <label id="query-label" for="query">消息</label>
+            <textarea id="query" rows="3" maxlength="2400" placeholder="例如：假声怎么练？也帮我测一下这段录音。"></textarea>
+            <button id="singing-mode-toggle" type="button" class="button quiet" aria-expanded="false" aria-controls="reference-fields" hidden>生成练习参考音</button>
             <div id="reference-fields" class="subpanel" hidden>
               <div class="form-grid">
-                <label>参考旋律<select id="melody">
+                <label id="melody-group">参考旋律<select id="melody">
                   <option value="warmup">八音上行下行练习</option><option value="triad">五音三和弦练习</option>
                 </select></label>
                 <label id="tempo-group">速度（BPM）<input id="bpm" type="number" value="90" min="50" max="160" required></label>
@@ -99,28 +94,29 @@
             </div>
             <div id="recording-fields" class="subpanel" hidden>
               <div id="drop-zone" class="drop-zone">
-                <label for="recording"><span class="upload-mark"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></span><span><strong id="file-name">选择或拖入清唱录音</strong><small id="file-detail">16 位 PCM WAV · 最长 60 秒 · 最大 12 MiB</small></span></label>
-                <input id="recording" class="visually-hidden" type="file" accept=".wav,audio/wav" aria-describedby="file-detail">
+                <label for="recording"><span class="upload-mark"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></span><span><strong id="file-name">选择或拖入清唱录音</strong><small id="file-detail">WAV（16 位 PCM）或 M4A · 最长 60 秒 · 最大 12 MiB</small></span></label>
+                <input id="recording" class="visually-hidden" type="file" accept=".wav,.m4a,audio/wav,audio/mp4,audio/x-m4a" aria-describedby="file-detail">
                 <button id="remove-recording" type="button" class="button quiet icon-only" aria-label="移除录音" hidden><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
               </div>
-              <div class="recording-tools">
-                <label class="short-field">录音起点（秒）<input id="offset" type="number" value="0" min="0" max="30" step="0.01" required></label>
-                <label class="check"><input id="also-plan" type="checkbox">测评后生成练习计划</label>
+              <p id="recording-purpose" class="hint">歌曲测评会将演唱录音与参考音频交给已配置的百炼音频模型。</p>
+              <div>
+                <label><span id="reference-file-label">对比歌声（可选）</span><input id="reference-file" type="file" accept=".wav,.m4a,audio/wav,audio/mp4,audio/x-m4a" aria-describedby="reference-file-info"></label>
+                <p id="reference-file-info" class="hint">WAV（16 位 PCM）或 M4A · 最长 8 分钟。建议使用清晰的单人主唱或独唱参考。</p>
+                <div id="reference-options" hidden>
+                  <div class="inline-controls">
+                    <button id="remove-reference" class="button quiet" type="button">移除对比歌声</button>
+                    <button id="preview-saved-reference" class="button quiet" type="button" hidden>试听已上传的参考歌曲</button>
+                  </div>
+                  <audio id="reference-preview" controls preload="metadata" hidden></audio>
+                </div>
               </div>
             </div>
-            <div id="plan-fields" class="subpanel" hidden>
-              <div class="form-grid">
-                <label>练习天数<input id="days" type="number" min="1" max="14" placeholder="3"></label>
-                <label>每天练习（分钟）<input id="minutes" type="number" min="5" max="90" placeholder="使用记忆或 15"></label>
-                <label>练习重点<select id="focus"><option value="">自动选择</option><option value="pitch_flat">音高偏低</option><option value="pitch_sharp">音高偏高</option><option value="timing">节奏</option><option value="stability">长音稳定</option><option value="register">换声区</option></select></label>
-              </div>
-              <label class="check" id="use-assessment-group" hidden><input id="use-assessment" type="checkbox" checked>使用本次会话中的测评</label>
-            </div>
+            <p id="plan-context" class="hint" hidden>本会话有可用的录音测评</p>
             <label id="lyrics-group" class="subpanel" hidden>歌词（可选）<input id="lyrics" maxlength="1000" placeholder="留空可生成参考音"><small id="singing-hint" class="hint">填写歌词需要连接歌声合成服务。</small></label>
           </fieldset>
           <div class="task-actions">
-            <label class="check" id="auto-group"><input type="checkbox" id="auto-route">自动识别任务</label>
-            <button id="send" type="submit" class="button primary"><span id="send-label">发送问题</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <button id="attach-audio" type="button" class="button quiet" aria-expanded="false" aria-controls="recording-fields"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg><span id="attach-audio-label">添加录音</span></button>
+            <button id="send" type="submit" class="button primary"><span id="send-label">发送</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div id="task-feedback" class="feedback" hidden>
             <p id="task-status" role="status"></p>
@@ -129,7 +125,7 @@
         </form>
       </section>
       <aside class="panel tips" aria-labelledby="tips-title">
-        <div class="tips-heading"><span class="mode-icon lilac"><svg class="icon" aria-hidden="true"><use href="#i-wave"/></svg></span><h2 id="tips-title">试着这样问</h2></div>
+        <div class="tips-heading"><span class="mode-icon"><svg class="icon" aria-hidden="true"><use href="#i-wave"/></svg></span><h2 id="tips-title">试着这样问</h2></div>
         <p id="tips-text"></p>
         <div id="suggestions" class="suggestions"></div>
       </aside>

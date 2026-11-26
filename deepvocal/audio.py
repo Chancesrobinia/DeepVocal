@@ -2,7 +2,9 @@ import io
 import os
 import time
 import wave
+from itertools import chain
 
+import av
 import httpx
 import numpy as np
 
@@ -12,23 +14,71 @@ MELODIES = {
     "triad": {"title": "五音三和弦练习", "notes": [60, 64, 67, 64, 60]},
 }
 MAX_BYTES = 12 * 1024 * 1024
+MAX_REFERENCE_SECONDS = 480
+MAX_REFERENCE_BYTES = 96 * 1024 * 1024
+SCORING_VERSION = 1
+UNUSABLE_ISSUES = {"insufficient_audio", "alignment_uncertain", "reference_unusable", "reference_not_found",
+                   "song_title_required", "reference_mismatch", "reference_segment_mismatch"}
 
 
-def read_wave(data):
+def read_wave(data, max_seconds=60):
     try:
         with wave.open(io.BytesIO(data), "rb") as reader:
             channels = reader.getnchannels()
             rate = reader.getframerate()
             frames = reader.getnframes()
             if (reader.getsampwidth() != 2 or channels not in (1, 2) or not 8000 <= rate <= 48000
-                    or not 0.25 <= frames / rate <= 60):
-                raise ValueError("录音需为 16 位 PCM WAV，单声道或立体声，8–48 kHz，0.25–60 秒。")
+                    or not 0.25 <= frames / rate <= max_seconds):
+                raise ValueError(f"音频需为 16 位 PCM WAV，单声道或立体声，8–48 kHz，0.25–{max_seconds} 秒。")
             samples = np.frombuffer(reader.readframes(frames), dtype="<i2")
             if len(samples) != frames * channels:
                 raise ValueError("WAV 数据不完整。")
     except (wave.Error, EOFError):
         raise ValueError("请上传有效的 16 位 PCM WAV 文件。") from None
-    return samples.reshape((-1, channels)).mean(axis=1) / 32768, rate
+    return samples.reshape((-1, channels)).mean(axis=1, dtype=np.float32) / 32768, rate
+
+
+def decode_m4a(data, max_seconds):
+    pcm = bytearray()
+    duration_error = f"M4A 音频时长须在 0.25–{max_seconds} 秒之间。"
+    try:
+        with av.open(io.BytesIO(data), format="mov", options={"enable_drefs": "0"}) as source:
+            if not source.streams.audio:
+                raise ValueError("M4A 文件中没有可用的音轨。")
+            stream = source.streams.audio[0]
+            source_rate = stream.rate or 44100
+            rate = min(48000, max(8000, source_rate))
+            duration = stream.duration * stream.time_base if stream.duration and stream.time_base else None
+            if duration is not None and duration > max_seconds:
+                raise ValueError(duration_error)
+            frames = round(duration * rate) if duration is not None else 0
+            # AAC may decode a full final block even when the container marks a shorter duration.
+            padding = round(2048 * rate / source_rate) if frames and stream.codec_context.name == "aac" else 0
+            limit = 2 * (max_seconds * rate + padding)
+            resampler = av.AudioResampler(format="s16", layout="mono", rate=rate)
+            for frame in chain(source.decode(stream), (None,)):
+                for converted in resampler.resample(frame):
+                    if len(pcm) + converted.samples * 2 > limit:
+                        raise ValueError(duration_error)
+                    pcm.extend(converted.to_ndarray().astype("<i2", copy=False).tobytes())
+    except av.error.FFmpegError:
+        raise ValueError("无法读取 M4A 音频，请检查文件是否完整。") from None
+    if 0 < len(pcm) // 2 - frames <= padding:
+        del pcm[frames * 2:]
+    if not 0.25 <= len(pcm) / (2 * rate) <= max_seconds:
+        raise ValueError(duration_error)
+    output = io.BytesIO()
+    with wave.open(output, "wb") as writer:
+        writer.setparams((1, 2, rate, 0, "NONE", ""))
+        writer.writeframes(pcm)
+    return output.getvalue()
+
+
+def read_upload(data, filename, max_seconds=60):
+    if not data.startswith(b"RIFF") and ((filename or "").lower().endswith(".m4a") or data[4:8] == b"ftyp"):
+        data = decode_m4a(data, max_seconds)
+    samples, rate = read_wave(data, max_seconds)
+    return data, samples, rate
 
 
 def to_wave(samples, rate):
@@ -131,7 +181,7 @@ def assess(data, spec):
             issue = "stability"
         else:
             issue = "general"
-    return {"melody_id": spec["melody_id"], "observed_at": time.time(), "issue": issue,
+    return {"melody_id": spec["melody_id"], "observed_at": time.time(), "issue": issue, "scoring_version": SCORING_VERSION,
             "matched_notes": len(found), "total_notes": len(melody), "median_pitch_error_cents": median,
             "within_50_cents_ratio": ratio, "timing_observations": len(timing), "notes": found}
 

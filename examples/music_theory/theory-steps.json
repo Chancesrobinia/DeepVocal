@@ -1,0 +1,52 @@
+{
+  "id": "theory-steps",
+  "title": "Understanding Basic Music Theory",
+  "edition": "Catherine Schmidt-Jones · LibreTexts · CC BY 3.0（中文改写）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Theory/Understanding_Basic_Music_Theory_%28Schmidt-Jones%29/06%3A_Notes_and_Scales/6.02%3A_Half_Steps_and_Whole_Steps",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-steps-semitone",
+      "section": "6.2 半音与全音 · 钢琴上的半音",
+      "text": "半音（semitone）是钢琴键盘上紧挨着的两个键之间的音高距离。C 到 C♯ 是一个半音，E 到 F、B 到上方的 C 也各是一个半音。这两对白键之间没有黑键。数半音时，数实际跨过了几次相邻键。",
+      "entities": [
+        "半音",
+        "音高",
+        "钢琴键盘"
+      ]
+    },
+    {
+      "id": "theory-steps-whole",
+      "section": "6.2 半音与全音 · 两个半音等于一个全音",
+      "text": "两个连续的半音合起来是一个全音（whole step）。C 到 D 是一个全音，中间经过 C♯。E 到 F♯ 也是一个全音，因为 E 到 F、F 到 F♯ 各是一个半音。",
+      "entities": [
+        "全音",
+        "半音"
+      ]
+    },
+    {
+      "id": "theory-steps-chromatic",
+      "section": "6.2 半音与全音 · 半音音阶",
+      "text": "半音音阶（chromatic scale）相邻的每个音都相差一个半音。按琴键逐个向上或向下唱时，把白键和黑键都算上。例如从 C 上行先到 C♯，再到 D、D♯、E、F。",
+      "entities": [
+        "半音音阶",
+        "半音",
+        "音高"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "半音",
+      "relation": "两个组成",
+      "tail": "全音",
+      "evidence_id": "theory-steps-whole"
+    },
+    {
+      "head": "半音音阶",
+      "relation": "相邻音相隔",
+      "tail": "半音",
+      "evidence_id": "theory-steps-chromatic"
+    }
+  ]
+}

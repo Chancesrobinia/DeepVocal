@@ -1,0 +1,66 @@
+{
+  "id": "theory-compound-meter",
+  "title": "Open Music Theory",
+  "edition": "Mark Gotham、Chelsey Hamm · CC BY-SA 4.0（中文改写）",
+  "source_url": "https://viva.pressbooks.pub/openmusictheory/chapter/compound-meters-and-time-signatures/",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-compound-meter-group",
+      "section": "复拍子与拍号 · 复拍子的三等分",
+      "text": "复拍子的每个大拍可以分成三等份。常见的 6/8、9/8、12/8 分别有两、三、四个大拍。上方数字表示一个小节包含多少份细分，下方的 8 表示每一份是一个八分音符。",
+      "entities": [
+        "复拍子",
+        "拍号",
+        "6/8",
+        "9/8",
+        "12/8",
+        "节拍"
+      ]
+    },
+    {
+      "id": "theory-compound-meter-six-eight",
+      "section": "复拍子与拍号 · 6/8 的大拍和小分拍",
+      "text": "6/8 常按每小节两个大拍来数，每个大拍含三个八分音符。一个大拍的时值等于一个附点四分音符。六个八分音符可以分成「1-la-li、2-la-li」，两组各有三个，第一个大拍落在第一个八分音符，第二个大拍落在第四个。",
+      "entities": [
+        "6/8",
+        "复二拍子",
+        "复拍子",
+        "八分音符",
+        "附点四分音符"
+      ]
+    },
+    {
+      "id": "theory-compound-meter-compare",
+      "section": "复拍子与拍号 · 3/4 和 6/8 的区别",
+      "text": "3/4 和 6/8 都可以容纳六个八分音符，区别在大拍分组。3/4 是三个大拍，每拍两个八分音符，分组 2+2+2。6/8 常是两个大拍，每拍三个八分音符，分组 3+3。试听时可边打大拍边比较这两种分组。",
+      "entities": [
+        "3/4",
+        "6/8",
+        "节拍",
+        "单三拍子",
+        "复二拍子"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "6/8",
+      "relation": "属于",
+      "tail": "复二拍子",
+      "evidence_id": "theory-compound-meter-six-eight"
+    },
+    {
+      "head": "6/8",
+      "relation": "每大拍等于",
+      "tail": "附点四分音符",
+      "evidence_id": "theory-compound-meter-six-eight"
+    },
+    {
+      "head": "3/4",
+      "relation": "大拍分组不同于",
+      "tail": "6/8",
+      "evidence_id": "theory-compound-meter-compare"
+    }
+  ]
+}

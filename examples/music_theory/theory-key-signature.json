@@ -1,0 +1,46 @@
+{
+  "id": "theory-key-signature",
+  "title": "Understanding Basic Music Theory",
+  "edition": "Catherine Schmidt-Jones · LibreTexts · CC BY 3.0（中文改写）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Theory/Understanding_Basic_Music_Theory_%28Schmidt-Jones%29/01%3A_Notation_-_Pitch/1.04%3A_Key_Signature",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-key-signature-meaning",
+      "section": "1.4 调号 · 调号说明默认的升降音",
+      "text": "调号（key signature）写在谱号之后，由一组升号或降号组成。调号里的 F♯ 表示，在该调号效力范围内，各八度的 F 默认都唱成 F♯，除非音符旁另有临时记号。调号提供的是音高拼写的默认规则。",
+      "entities": [
+        "调号",
+        "升号",
+        "降号",
+        "谱号",
+        "临时升降记号"
+      ]
+    },
+    {
+      "id": "theory-key-signature-f-sharp",
+      "section": "1.4 调号 · 为什么 G 大调调号有一个升号",
+      "text": "G 大调的调号有一个升号，表示把 F 默认升成 F♯。识别升号调号对应的大调时，可以从最后一个升号往上数一个半音；例如最后一个升号是 F♯，往上一个半音是 G。判断实际调性时，还要结合音乐中的主音。",
+      "entities": [
+        "调号",
+        "升号",
+        "G大调",
+        "主音"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "调号",
+      "relation": "可以标记",
+      "tail": "升号",
+      "evidence_id": "theory-key-signature-meaning"
+    },
+    {
+      "head": "调号",
+      "relation": "可以标记",
+      "tail": "降号",
+      "evidence_id": "theory-key-signature-meaning"
+    }
+  ]
+}

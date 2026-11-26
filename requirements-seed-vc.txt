@@ -1,0 +1,14 @@
+# Windows Seed-VC singing service. Install the matching PyTorch CUDA wheels first.
+descript-audio-codec==1.0.0
+einops==0.8.0
+gradio==5.23.0
+huggingface-hub==0.34.4
+librosa==0.10.2
+matplotlib==3.9.4
+munch==4.0.0
+numpy==1.26.4
+pydub==0.25.1
+PyYAML==6.0.2
+scipy==1.13.1
+soundfile==0.12.1
+transformers==4.46.3

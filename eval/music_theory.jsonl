@@ -1,0 +1,10 @@
+{"question":"两个半音合起来等于几个全音？","relevant_chunk_ids":["theory-steps-whole"]}
+{"question":"从 C 到 E 用音名数是几度？起音和终音算不算？","relevant_chunk_ids":["theory-interval-size"]}
+{"question":"大三度和小三度差一个半音吗？从 C 唱起举个例子。","relevant_chunk_ids":["theory-interval-quality"]}
+{"question":"大调音阶从主音开始，全音和半音怎么排列？","relevant_chunk_ids":["theory-major-pattern"]}
+{"question":"调号里只有一个升号 F♯，对应的是哪个大调？","relevant_chunk_ids":["theory-key-signature-f-sharp"]}
+{"question":"C 大调歌曲整体降两个半音后是什么调？伴奏也要降吗？","relevant_chunk_ids":["theory-transpose-down-two"]}
+{"question":"都是六个八分音符，3/4 和 6/8 分别应该数几个大拍？","relevant_chunk_ids":["theory-compound-meter-compare"]}
+{"question":"一个附点四分音符等于几个八分音符？","relevant_chunk_ids":["theory-duration-dotted"]}
+{"question":"节拍器设成 120 BPM，一拍相隔几秒？","relevant_chunk_ids":["theory-tempo-bpm"]}
+{"question":"歌还没到小节的第一重拍就开唱，这个术语是什么？","relevant_chunk_ids":["theory-pickup-beginning"]}

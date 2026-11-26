@@ -1,0 +1,86 @@
+{
+  "id": "theory-duration",
+  "title": "Open Music Theory",
+  "edition": "Mark Gotham、Chelsey Hamm、Bryn Hughes · CC BY-SA 4.0（中文改写）",
+  "source_url": "https://viva.pressbooks.pub/openmusictheory/chapter/notating-rhythm/",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-duration-division",
+      "section": "音符与休止符的时值 · 四分、八分、十六分音符",
+      "text": "一个四分音符的时值等于两个八分音符，也等于四个十六分音符。以四分音符为一拍时，八分音符占半拍，十六分音符占四分之一拍。拍的单位变化时，音符之间的时长比例保持不变。",
+      "entities": [
+        "四分音符",
+        "八分音符",
+        "十六分音符",
+        "时值"
+      ]
+    },
+    {
+      "id": "theory-duration-dotted",
+      "section": "音符与休止符的时值 · 附点四分音符等于几个八分音符",
+      "text": "一个附点增加原音符一半的时值。附点四分音符等于一个四分音符加一个八分音符，也就是三个八分音符。四分音符为一拍时，它占一拍半。附点也可以用在休止符上。",
+      "entities": [
+        "附点",
+        "附点四分音符",
+        "四分音符",
+        "八分音符",
+        "时值"
+      ]
+    },
+    {
+      "id": "theory-duration-rests",
+      "section": "音符与休止符的时值 · 休止符也有时值",
+      "text": "休止符记录不发声的时段。四分休止符和四分音符的时值一样，八分休止符和八分音符的时值一样。碰到休止时仍按节拍计数，等休止时值结束后再进入下一个音。",
+      "entities": [
+        "休止符",
+        "四分休止符",
+        "八分休止符",
+        "时值"
+      ]
+    },
+    {
+      "id": "theory-duration-tie",
+      "section": "音符与休止符的时值 · 延音线连接同音高",
+      "text": "延音线（tie）把两个或更多同音高音符连起来，时值相加，后面的音符不再重新起音。例如同音高的二分音符与四分音符相连，唱的时候连续保持三个四分音符的时长。",
+      "entities": [
+        "延音线",
+        "时值",
+        "起音",
+        "音高"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "四分音符",
+      "relation": "时值等于两个",
+      "tail": "八分音符",
+      "evidence_id": "theory-duration-division"
+    },
+    {
+      "head": "附点",
+      "relation": "延长原有",
+      "tail": "时值",
+      "evidence_id": "theory-duration-dotted"
+    },
+    {
+      "head": "附点四分音符",
+      "relation": "时值等于三个",
+      "tail": "八分音符",
+      "evidence_id": "theory-duration-dotted"
+    },
+    {
+      "head": "休止符",
+      "relation": "记写静默的",
+      "tail": "时值",
+      "evidence_id": "theory-duration-rests"
+    },
+    {
+      "head": "延音线",
+      "relation": "合并",
+      "tail": "时值",
+      "evidence_id": "theory-duration-tie"
+    }
+  ]
+}

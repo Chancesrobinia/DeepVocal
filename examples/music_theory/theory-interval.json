@@ -1,0 +1,68 @@
+{
+  "id": "theory-interval",
+  "title": "Understanding Basic Music Theory",
+  "edition": "Catherine Schmidt-Jones · LibreTexts · CC BY 3.0（中文改写）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Theory/Understanding_Basic_Music_Theory_%28Schmidt-Jones%29/06%3A_Notes_and_Scales/6.05%3A_Interval",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-interval-size",
+      "section": "6.5 音程 · 音程的度数怎么数",
+      "text": "音程（interval）表示两个音之间的音高距离。数音程的度数时，按谱上的字母音名计数，起音和终音都算在内。例如 C 到 E 是 C、D、E 三个音名，所以是三度。升降记号会改变半音数，字母音名不变时度数不变。",
+      "entities": [
+        "音程",
+        "度数",
+        "三度"
+      ]
+    },
+    {
+      "id": "theory-interval-quality",
+      "section": "6.5 音程 · 大三度、小三度和纯五度",
+      "text": "判断音程时，先数度数，再数两个音之间跨过的半音。C 到 E 是 4 个半音，为大三度；C 到 E♭ 是 3 个半音，为小三度。C 到 G 相隔 7 个半音，为纯五度。度数相同的两个音程可以有不同的性质。",
+      "entities": [
+        "音程",
+        "半音",
+        "大三度",
+        "小三度",
+        "纯五度"
+      ]
+    },
+    {
+      "id": "theory-interval-octave",
+      "section": "6.5 音程 · 八度与同度",
+      "text": "同一个音高之间的纯一度跨 0 个半音；同一字母音名的相邻两个八度之间，纯八度跨 12 个半音。数度数时，从一个 C 到高一个八度的 C，两个 C 都要计入。",
+      "entities": [
+        "纯八度",
+        "纯一度",
+        "半音",
+        "音程"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "音程",
+      "relation": "按音名计数确定",
+      "tail": "度数",
+      "evidence_id": "theory-interval-size"
+    },
+    {
+      "head": "大三度",
+      "relation": "相隔四个",
+      "tail": "半音",
+      "evidence_id": "theory-interval-quality"
+    },
+    {
+      "head": "小三度",
+      "relation": "相隔三个",
+      "tail": "半音",
+      "evidence_id": "theory-interval-quality"
+    },
+    {
+      "head": "纯八度",
+      "relation": "相隔十二个",
+      "tail": "半音",
+      "evidence_id": "theory-interval-octave"
+    }
+  ]
+}

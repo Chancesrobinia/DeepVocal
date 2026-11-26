@@ -1,0 +1,45 @@
+{
+  "id": "theory-pickup",
+  "title": "Understanding Basic Music Theory",
+  "edition": "Catherine Schmidt-Jones · LibreTexts · CC BY 3.0（中文改写）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Theory/Understanding_Basic_Music_Theory_%28Schmidt-Jones%29/02%3A_Notation_-_Time/2.05%3A_Pickup_Notes_and_Measures",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-pickup-beginning",
+      "section": "2.5 弱起音与弱起小节 · 弱起音唱在第一重拍之前",
+      "text": "弱起音是在乐句第一个强拍到来之前就唱出的音。歌曲开头若只有这些弱起音的时值，第一小节会比拍号规定的完整小节短，称为弱起小节。数拍时先找出接下来的强拍，再把弱起音放到到达强拍前的位置。",
+      "entities": [
+        "弱起",
+        "弱起音",
+        "弱起小节",
+        "强拍"
+      ]
+    },
+    {
+      "id": "theory-pickup-example",
+      "section": "2.5 弱起音与弱起小节 · 四拍子的弱起小节怎样数",
+      "text": "在每小节四拍的曲子里，若开头只有一拍的弱起音，可以先把它理解为落在第 4 拍，然后下一小节进入强拍第 1 拍。有些记谱会把尾小节写成三拍，使开头的弱起小节和尾小节合起来是完整的四拍。",
+      "entities": [
+        "弱起小节",
+        "弱起音",
+        "4/4",
+        "小节"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "弱起音",
+      "relation": "先于乐句的",
+      "tail": "强拍",
+      "evidence_id": "theory-pickup-beginning"
+    },
+    {
+      "head": "弱起小节",
+      "relation": "包含",
+      "tail": "弱起音",
+      "evidence_id": "theory-pickup-beginning"
+    }
+  ]
+}

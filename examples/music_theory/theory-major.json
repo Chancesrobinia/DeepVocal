@@ -1,0 +1,61 @@
+{
+  "id": "theory-major",
+  "title": "Understanding Basic Music Theory",
+  "edition": "Catherine Schmidt-Jones · LibreTexts · CC BY 3.0（中文改写）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Theory/Understanding_Basic_Music_Theory_%28Schmidt-Jones%29/06%3A_Notes_and_Scales/6.03%3A_Major_Keys_and_Scales",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-major-pattern",
+      "section": "6.3 大调音阶 · 大调音阶的全半音顺序",
+      "text": "大调音阶从主音开始上行到高八度主音，按「全、全、半、全、全、全、半」的顺序排列。第 3 到第 4 级、第 7 到第 8 级是半音。这个间隔排列适用于所有大调。",
+      "entities": [
+        "大调音阶",
+        "全音",
+        "半音",
+        "全半音顺序",
+        "主音"
+      ]
+    },
+    {
+      "id": "theory-major-tonic",
+      "section": "6.3 大调音阶 · 主音和大调音阶的名称",
+      "text": "主音（tonic）是调的中心，大调音阶以主音命名。C 大调的主音是 C，G 大调的主音是 G。从 G 出发套用大调音阶的全半音顺序，第七级要唱 F♯，才能让 F♯ 到上方 G 正好相隔半音。",
+      "entities": [
+        "主音",
+        "大调音阶",
+        "G大调"
+      ]
+    },
+    {
+      "id": "theory-major-c-major",
+      "section": "6.3 大调音阶 · C 大调音阶示例",
+      "text": "从 C 开始唱 C、D、E、F、G、A、B、C，就是 C 大调音阶。E 到 F 和 B 到上方 C 是半音，其余相邻音是全音。练习时可以先唱一次上行，再检查两个半音的位置。",
+      "entities": [
+        "C大调",
+        "大调音阶",
+        "全半音顺序"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "大调音阶",
+      "relation": "以此作为起点",
+      "tail": "主音",
+      "evidence_id": "theory-major-pattern"
+    },
+    {
+      "head": "大调音阶",
+      "relation": "遵循",
+      "tail": "全半音顺序",
+      "evidence_id": "theory-major-pattern"
+    },
+    {
+      "head": "G大调",
+      "relation": "主音为G",
+      "tail": "主音",
+      "evidence_id": "theory-major-tonic"
+    }
+  ]
+}

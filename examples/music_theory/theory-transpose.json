@@ -1,0 +1,64 @@
+{
+  "id": "theory-transpose",
+  "title": "Understanding Basic Music Theory",
+  "edition": "Catherine Schmidt-Jones · LibreTexts · CC BY 3.0（中文改写）",
+  "source_url": "https://human.libretexts.org/Bookshelves/Music/Music_Theory/Understanding_Basic_Music_Theory_%28Schmidt-Jones%29/08%3A_Challenges/8.04%3A_Transposition-_Changing_Keys",
+  "use": "cloud",
+  "chunks": [
+    {
+      "id": "theory-transpose-rule",
+      "section": "8.4 移调 · 整体升降保持音程",
+      "text": "整体移调（transposition）是把所有音符按同一个音程、朝同一方向上移或下移。旋律音之间的音程保持不变，调的主音也要移动同样的距离。歌曲的和弦和伴奏如果一起使用，也要跟随同样的升降距离。",
+      "entities": [
+        "移调",
+        "音程",
+        "半音",
+        "主音",
+        "伴奏"
+      ]
+    },
+    {
+      "id": "theory-transpose-down-two",
+      "section": "8.4 移调 · C 大调整体降低两个半音",
+      "text": "C 大调整体降低两个半音，相当于降低一个全音。主音 C 降到 B♭，新调是降 B 大调，原来的 C、D、E 依次成为 B♭、C、D。如果一起使用伴奏，也要把伴奏整体降两个半音，使旋律和伴奏使用同一个调。",
+      "entities": [
+        "移调",
+        "降调",
+        "C大调",
+        "降B大调",
+        "伴奏"
+      ]
+    },
+    {
+      "id": "theory-transpose-range",
+      "section": "8.4 移调 · 根据歌唱音域选择新调",
+      "text": "原调太高或太低时，可以试听整体调低或调高后的旋律，听最高音和最低音是否都落在自己适合的音域。例如 G 调太低时，整体升一个全音可以试 A 调。先决定升降方向和距离，再把谱面音符及和弦统一移动。",
+      "entities": [
+        "移调",
+        "歌唱音域",
+        "参考调",
+        "全音"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "head": "移调",
+      "relation": "保持",
+      "tail": "音程",
+      "evidence_id": "theory-transpose-rule"
+    },
+    {
+      "head": "移调",
+      "relation": "伴随同向移动",
+      "tail": "主音",
+      "evidence_id": "theory-transpose-rule"
+    },
+    {
+      "head": "移调",
+      "relation": "伴奏须同步调整",
+      "tail": "伴奏",
+      "evidence_id": "theory-transpose-down-two"
+    }
+  ]
+}
